@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+    <div class="container"></div>
    <header>
-    <div><h1>Siri</h1></div>
-    <div>
+    <h1>Siri</h1>
+    <nav>
         <ul>
             <li><a  href="#home">Home</a></li>
             <li><a  href="#projects">Projects</a></li>
@@ -17,28 +18,46 @@
             <li><a  href="#about">About</a></li>
             <li><a  href="#contact">Contact</a></li>
         </ul>
-    </div>
+        </nav>
    </header>
    <main>
+    <section id="home">
+        <div class="row">
+            <div class="box">
+                <h1 class="title">Mern stack developer</h1>
+                <p class="summary">
+                    The MERN stack is a collection of JavaScript-based technologies that are used together to develop web applications. The stack consists of MongoDB, Express, React, and Node. js. MongoDB is a highly scalable document database that makes it easy to store and retrieve data in JSON documents
+                </p>
+<p><button class="Signup">Know more</button></p>
+            </div>
+            <div class="box">
+<img src="image.png" width="300px" class="image" alt="Authors Image"/>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+    <h2 class="projects-heading">Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Some description to the project. Some description of the project</p>
+            <button class="demo-button">View Demo</button>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Description for project 2 goes here.</p>
+            <button class="demo-button">View Demo</button>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Description for project 3 goes here.</p>
+            <button class="demo-button">View Demo</button>
+        </div>
+    </div>
+</section>
+
 
    </main>
-    <main>
-        <section id="home">
-          <div class="row">
-            <div class="box">
-              <h1 class="title">MERN Stack Developer</h1>
-              <p class="summary">
-               The MERN stack is a collection of JavaScript-based technologies that are used together to develop web applications. The stack consists of MongoDB, Express, React, and Node. js. MongoDB is a highly scalable document database that makes it easy to store and retrieve data in JSON documents
-              </p>
-              <p><button class="btn-signup">Know more</button></p>
-              
-            </div>
-            <div class="box">
-              <img src="images/officedesk.jpg" width="400px" class="image" alt="Authors Image" />
-            </div>
-          </div>
-        </section>
-      </main>
    <footer>
 
    </footer>
