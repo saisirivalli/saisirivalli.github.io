@@ -162,10 +162,10 @@ header a{
 }
 
 .contact-form {
-    background-color:#4caf50;
+    background-color:#af4ca5;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(170, 130, 130, 0.1);
     width: 100%;
     max-width: 500px;
 }
@@ -175,15 +175,15 @@ header a{
     width: 100%;
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #9c7777;
     border-radius: 6px;
     font-size: 16px;
 }
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
+    background-color: #eaca00;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 6px;
     font-size: 16px;
