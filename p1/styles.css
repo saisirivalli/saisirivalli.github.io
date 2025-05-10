@@ -134,8 +134,8 @@ header a{
 }
 
 .service-card {
-    background-color: #fdfdfd;
-    border: 2px solid #ccc;
+    background-color: #a31818;
+    border: 2px solid:#d6c9f0c;
     border-radius: 16px;
     width: 250px;
     padding: 20px;
@@ -162,7 +162,7 @@ header a{
 }
 
 .contact-form {
-    background-color: #fff;
+    background-color:#4caf50;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
