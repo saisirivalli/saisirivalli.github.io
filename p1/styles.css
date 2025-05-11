@@ -160,11 +160,11 @@ header a{
     display: flex;
     justify-content: center;
     padding: 50px;
-    background-color: aqua;
+    background-color: rgb(216, 39, 184);
 }
 
 .contact-form {
-    background-color:#be7fdf;
+    background-color:#c89edf;updated
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(170, 130, 130, 0.1);
