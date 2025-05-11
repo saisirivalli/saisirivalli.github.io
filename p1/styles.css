@@ -59,6 +59,7 @@ header a{
 .box {
     width: 500px;
     padding: 30px;
+    transition: transform .5s;
 }
 
 .btn-Signup{
