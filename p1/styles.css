@@ -130,11 +130,12 @@ header a{
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 30px auto;
+    background-color: #af4ca5;
     padding: 20px;
 }
 
 .service-card {
-    background-color: #a31818;
+    background-color: #786161;
     border: 2px solid: #d6c9f0c;
     border-radius: 16px;
     width: 250px;
@@ -159,6 +160,7 @@ header a{
     display: flex;
     justify-content: center;
     padding: 50px;
+    background-color: aqua;
 }
 
 .contact-form {
