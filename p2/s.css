@@ -1,0 +1,38 @@
+ *{
+    margin:0;
+}
+#top-container{
+    overflow-x:auto;
+    width:100%;
+}
+.first-top{
+    position:fixed;
+    top:0;
+@@ -17,18 +21,24 @@
+    font-size: large;
+    color: orange;
+    margin-right: 700px;
+    margin-left: 20px;
+    margin-left: 5px;
+}
+.s{
+    display:flex;
+
+
+}
+.s select,.s input{
+    margin-right: 10px;
+    margin-right: 5px;
+    padding:6px;
+}
+.sup,.cart{
+    margin-left:20px;
+    margin-left:10px;
+    text-align: right;
+    margin-right: 0px;
+}
+.logo {
+  height: 40px; 
+  width: auto;
+  margin-right: 1px;
+}
