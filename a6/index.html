@@ -10,7 +10,7 @@
 <body>
   <div class="login-container">
     <h2>Login</h2>
-    <form action="/login" method="post">
+    <form id="loginForm">
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
 
@@ -19,14 +19,20 @@
 
       <button type="submit">Submit</button>
     </form>
+
+    <!-- Output container -->
+    <div id="output" style="margin-top: 20px; font-weight: bold;"></div>
   </div>
 
-   <script>
-    function submitForm() {
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      document.getElementById('output').textContent = `${email} , ${password}`;
-    }
+
+      document.getElementById('output').textContent = `Email: ${email}, Password: ${password}`;
+    });
   </script>
 </body>
 </html>
