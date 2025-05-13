@@ -20,5 +20,13 @@
       <button type="submit">Submit</button>
     </form>
   </div>
+
+   <script>
+    function submitForm() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      document.getElementById('output').textContent = `${email} , ${password}`;
+    }
+  </script>
 </body>
 </html>
