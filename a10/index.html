@@ -31,23 +31,27 @@
     <script>
       const products = [
       
-        {
+        
+           {
           id: 1,
           name: "Apple",
           price: 250,
-        <a href="data:image/jpeg;base64,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" class="demo-button" >View Demo</a>
+          imgUrl: "https://picsum.photos/id/11/200/200",
         },
         {
           id: 2,
           name: "Orange",
           price: 100,
-          imgUrl: "",
+          imgUrl: "https://picsum.photos/id/12/200/200",
         },
         {
           id: 3,
           name: "Mango",
           price: 80,
-          
+          imgUrl: "https://picsum.photos/id/13/200/200",
+        },
+      ];
+        
       
       function addProduct() {
         let id = document.querySelector("#txtId").value;
