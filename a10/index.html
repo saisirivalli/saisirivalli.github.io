@@ -12,11 +12,11 @@
       }
 
       .row div {
-@@ -18,25 +19,65 @@
+
       }
     </style>
   </head>
-  <body>
+  
   <body onload="dispProducts()">
     <h1>Handling Array of Objects</h1>
     <p>
@@ -29,10 +29,7 @@
     <div id="container" class="row"></div>
     <script>
       const products = [
-        { id: 1, name: "Apple", price: 250, imgUrl: "https://picsum.photos/id/11/200/200" },
-        { id: 2, name: "Orange", price: 100, imgUrl: "https://picsum.photos/id/12/200/200" },
-        { id: 3, name: "Mango", price: 80, imgUrl: "https://picsum.photos/id/13/200/200" },
-        {
+      {
           id: 1,
           name: "Apple",
           price: 250,
@@ -51,9 +48,7 @@
           imgUrl: "https://images.app.goo.gl/MQJWwpB8r6ssRR7XA",
         },
       ];
-      let str = "";
-      products.map((value) => {
-        str += `<div>
+     
 
       function addProduct() {
         let id = document.querySelector("#txtId").value;
@@ -79,8 +74,7 @@
                 <h3>${value.price}</h3>
                 <button>Add to Cart</button>
                 </div>`;
-      });
-      container.innerHTML = str;
+    
         });
         container.innerHTML = str;
       }
