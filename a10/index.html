@@ -1,4 +1,5 @@
-    <!DOCTYPE html>
+   
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +12,7 @@
         flex-wrap: wrap;
       }
 
-       .row div {
+      .row div {
 @@ -18,25 +19,65 @@
       }
     </style>
@@ -29,11 +30,12 @@
     <div id="container" class="row"></div>
     <script>
       const products = [
-          {
+      
+        {
           id: 1,
           name: "Apple",
           price: 250,
-          imgUrl: "<img alt="Apple Stock Photos, Images and Backgrounds for Free Download" id="dimg_1IknaIqpH_-Q2roP27iY6QY_9" src="data:image/jpeg;base64,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" data-csiid="1IknaIqpH_-Q2roP27iY6QY_19" data-atf="1">",
+          imgUrl: "https://picsum.photos/id/11/200/200",
         },
         {
           id: 2,
@@ -48,7 +50,8 @@
           imgUrl: "https://picsum.photos/id/13/200/200",
         },
       ];
-       function addProduct() {
+      
+      function addProduct() {
         let id = document.querySelector("#txtId").value;
         let name = document.querySelector("#txtName").value;
         let price = document.querySelector("#txtPrice").value;
@@ -72,10 +75,8 @@
                 <h3>${value.price}</h3>
                 <button>Add to Cart</button>
                 </div>`;
-                
-                
-                
-  });
+     
+        });
         container.innerHTML = str;
       }
     </script>
