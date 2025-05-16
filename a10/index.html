@@ -1,83 +1,163 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+<head>
+  <meta charset="UTF-8">
+  <title>Fresh Fruits</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fffce4, #ffe3e3);
+    }
+
+    header {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    .form-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .form-container input {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 200px;
+      font-size: 1em;
+    }
+
+    .form-container button {
+      padding: 10px 20px;
+      background-color: #ff7e5f;
+      border: none;
+      color: white;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-container button:hover {
+      background-color: #e06750;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 220px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .fruit-name {
+      font-size: 1.2em;
+      color: #e65100;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      font-size: 1em;
+      color: #4caf50;
+      font-weight: bold;
+    }
+
+    .delete-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: background-color 0.3s;
+    }
+
+    .delete-btn:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+
+    <button onclick="addFruit()">Add Fruit</button>
+  </div>
+
+ 
+  <div class="container" id="fruitContainer"></div>
+
+  <script>
+    const fruits = [
+
+        <img src="${fruit.image}" alt="${fruit.name}">
+        <div class="card-body">
+          <div class="fruit-name">${fruit.name}</div>
+          <
+          <div class="price">${fruit.price !== 'N/A' ? '$' + fruit.price : 'N/A'}</div>
+          <button class="delete-btn">Delete</button>
+        </div>
+      `;
+
+      card.querySelector(".delete-btn").addEventListener("click", () => {
+        card.remove();
+      });
+
+      container.appendChild(card);
+    }
+
+    fruits.forEach(fruit => createCard(fruit));
+
+    function addFruit() {
+      const name = document.getElementById("fruitName").value.trim();
+      const url = document.getElementById("fruitURL").value.trim();
+
+      if (name === "" || url === "") {
+        alert("Please enter both name and image URL.");
+        return;
       }
 
-      .row div {
+      const newFruit = {
+        name: name,
+        price: "N/A",
+        image: url
+      };
 
-      }
-    </style>
-  </head>
-  
-  <body onload="dispProducts()">
-    <h1>Handling Array of Objects</h1>
-    <p>
-      <input type="number" id="txtId" />
-      <input type="text" id="txtName" />
-      <input type="number" id="txtPrice" />
-      <input type="text" id="txtUrl" />
-      <button onclick="addProduct()">Add</button>
-    </p>
-    <div id="container" class="row"></div>
-    <script>
-      const products = [
-      {
-          id: 1,
-          name: "Apple",
-          price: 250,
-          imgUrl: "data:image/jpeg;base64",
-        },
-        {
-          id: 2,
-          name: "Orange",
-          price: 100,
-          imgUrl: "https://picsum.photos/id/12/200/200",
-        },
-        {
-          id: 3,
-          name: "Mango",
-          price: 80,
-          imgUrl: "https://images.app.goo.gl/MQJWwpB8r6ssRR7XA",
-        },
-      ];
-     
+      createCard(newFruit);
+      document.getElementById("fruitName").value = "";
+      document.getElementById("fruitURL").value = "";
+    }
+  </script>
 
-      function addProduct() {
-        let id = document.querySelector("#txtId").value;
-        let name = document.querySelector("#txtName").value;
-        let price = document.querySelector("#txtPrice").value;
-        let imgUrl = document.querySelector("#txtUrl").value;
-        const obj = {
-          id: id,
-          name: name,
-          price: price,
-          imgUrl: imgUrl,
-        };
-        products.push(obj)
-        dispProducts()
-      }
-
-      function dispProducts() {
-        let str = "";
-        products.map((value) => {
-          str += `<div>
-                <img src=${value.imgUrl}/>
-                <h2>${value.name}</h2>
-                <h3>${value.price}</h3>
-                <button>Add to Cart</button>
-                </div>`;
-    
-        });
-        container.innerHTML = str;
-      }
-    </script>
-  </body>
-</html>
+</body>
