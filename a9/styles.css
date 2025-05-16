@@ -10,7 +10,6 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #f9d423, #ff4e50);
-  background-color: darkgreen;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -40,7 +39,7 @@ input {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #28a745;
+  background-color: #a75b28;
   color: white;
   border: none;
   border-radius: 8px;
@@ -56,3 +55,4 @@ button:hover {
   margin-top: 15px;
   font-weight: bold;
   font-size: 16px;
+}
