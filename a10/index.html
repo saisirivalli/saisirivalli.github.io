@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .row {
+      .row { 
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -29,11 +29,10 @@
     </p>
     <div id="container" class="row"></div>
     <script>
-      const products = [
-      
-        
-           {
-          id: 1,
+      const products =[ 
+            {    
+                   
+            id: 1,
           name: "Apple",
           price: 250,
           imgUrl: "https://picsum.photos/id/11/200/200",
@@ -52,8 +51,7 @@
         },
       ];
         
-      
-      function addProduct() {
+       function addProduct() {
         let id = document.querySelector("#txtId").value;
         let name = document.querySelector("#txtName").value;
         let price = document.querySelector("#txtPrice").value;
