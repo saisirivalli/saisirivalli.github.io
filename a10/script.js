@@ -3,21 +3,27 @@ let fruits = [
   { id: 2, name: "Orange", price: 100, img: "https://i.imgur.com/vtFkbB3.png" },
   { id: 3, name: "Mango", price: 80, img: "https://i.imgur.com/1f6bD6Z.png" }
 ];
+
+// Arrow function to render fruits
 const renderFruits = () => {
-     const container = document.getElementById("fruit-container");
+  const container = document.getElementById("fruit-container");
   container.innerHTML = "";
 
   fruits.forEach(({ name, price, img }) => {
-     card.innerHTML = `
+    const card = document.createElement("div");
+    card.className = "fruit-card";
+    card.innerHTML = `
       <img src="${img}" alt="${name}">
       <h3>${name}</h3>
       <p>₹${price}</p>
       <button class="add-btn">Add to Cart</button>
     `;
+
     card.querySelector(".add-btn").addEventListener("click", () => {
       console.log(`${name} added to cart.`);
     });
-@@ -32,4 +27,28 @@ const renderFruits = () => {
+
+    container.appendChild(card);
   });
 };
 
