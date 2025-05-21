@@ -1,14 +1,12 @@
-const products=[
-    {id:1, name:"Product1", price:34},
-    {id:2, name:"Product2", price:56},
-    {id:3, name:"Product3", price:43},
-]
+let fruits = [
+  { id: 1, name: "Apple", price: 250 ,qty : 2, status : "pending" },
+  { id: 2, name: "Orange", price: 100, qty : 2,status : "pending"  },
+  { id: 3, name: "Mango", price: 80 ,qty : 2, status : "pending" },
+];
 
-const updatedProducts = products.map(product => ({
-    id: product.id,
-    name: product.name,
-    price: product.price + 5,
-}));
-updatedProducts.map(product => {
-  console.log(product.name, product.price);
-});
+let updatedFruits = fruits.map(element => ({...element , total : element.price * element.qty , status : "completed" , }));
+ 
+
+updatedFruits.forEach(element => {
+  console.log(element.name+" "+element.total);
+})
