@@ -2,16 +2,32 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('img/background-pattern.jpg'); 
   background-image: url('images/backgrndd.png'); 
   background-size: cover;
   background-position: center;
   background-repeat:repeat;
-@@ -27,370 +27,370 @@
+  height: 100vh;
+  color: white; 
+  font-family: Arial, sans-serif;
+  
+}
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+    width: 100%;
     margin: auto
 }
  .search {
-  background-color: rgb(120, 196, 188);
   background-color: rgb(191, 204, 203);
   border-radius: 20px;
   width: 500px;
@@ -60,7 +76,7 @@ body {
   left: 20px;
   font-weight: bold;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-
+   
 }
 .smo{
     position: absolute;
@@ -88,7 +104,7 @@ font-weight: bold;
 .veggies{
      position: relative;
     left:40px;
-
+   
 }
 .veggies:hover{
   transform: scale(1.05,1.05);
@@ -98,7 +114,7 @@ font-weight: bold;
     color: rgba(0, 0, 0, 0.815);
     top: 6px;
   left: 50px;
-
+  
   font-family: 'Times New Roman', Times, serif;
 }
 .sale{
@@ -141,7 +157,7 @@ font-weight: bold;
     color: rgba(0, 0, 0, 0.815);
     top:5px;
    left : 50px;
-
+ 
   font-family: 'Times New Roman', Times, serif;
 }
 .sale2{
@@ -215,13 +231,13 @@ font-weight: bold;
   display: flex;
   align-items: center;
   background-color: rgb(159, 217, 169);
-
+ 
   border-radius: 15px;
   padding: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   gap: 10px; 
   width: fit-content;
-
+  
 }
 
 .img {
@@ -315,7 +331,7 @@ font-weight: bold;
 
 
 footer {
-
+   
     padding: 40px 20px 10px;
     font-family: Arial, sans-serif;
     color: #333;
@@ -379,3 +395,4 @@ footer {
     padding-top: 20px;
     font-size: 13px;
     color: #888;
+}
