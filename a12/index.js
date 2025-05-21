@@ -1,6 +1,9 @@
-const products=[
-    {id:1, name:"Product1", price:34},
-    {id:2, name:"Product2", price:56},
-    {id:3, name:"Product3", price:43},
-]
-products.forEach((product)=>console.log(product.name))
+let fruits = [
+  { id: 1, name: "Apple", price: 250 },
+  { id: 2, name: "Orange", price: 100 },
+  { id: 3, name: "Mango", price: 80 },
+];
+
+fruits.forEach((element) => {
+  console.log(element.name);
+});
