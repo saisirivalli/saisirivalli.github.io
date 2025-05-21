@@ -196,4 +196,31 @@ header a{
 .contact-form button:hover {
     background-color: #45a049;
 }
-~
+#services, #about, #contact {
+    padding: 30px 20px;
+}
+#home {
+    background-color: #fff8e1; /* light yellow */
+}
+
+#services {
+    background-color: #e1f5fe; /* light blue */
+}
+
+#about {
+    background-color: #e8f5e9; /* light green */
+}
+
+#contact {
+    background-color: #fce4ec; /* light pink */
+}
+.box:hover{
+    transform:scale(1.1,1.1);
+}
+
+.info-box:hover{
+    transform:scale(1.1,1.1);
+}
+.project-card:hover{
+    transform:scale(1.1,1.1);
+}
