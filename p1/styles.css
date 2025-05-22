@@ -181,6 +181,7 @@ header a{
     border: 1px solid #9c7777;
     border-radius: 6px;
     font-size: 16px;
+    text-align: center;
 }
 
 .contact-form button {
