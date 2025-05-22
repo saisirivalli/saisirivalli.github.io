@@ -1,54 +1,52 @@
 
- * {
-    margin: 0;
+body {
+    background: url('your-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
-
-.container {
-    width: 100%;
-    margin: auto
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: orange;
-    color: black;
-    padding: 10px;
-}
-
-li {
-    display: inline-block;
-    font-size: 20px;
-    padding: 5px;
-}
-
+/* Reset & Base Styles */
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
+
+/* Container Setup */
 .container {
     width: 100%;
-    margin: auto
+    margin: auto;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
-    background-color: orange;
+    align-items: center;
+    background-color: rgba(255, 165, 0, 0.9); /* Semi-transparent orange */
     color: rgb(117, 8, 26);
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 header li {
     display: inline-block;
     font-size: 20px;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
-header a{
+header a {
     text-decoration: none;
+    color: inherit;
 }
 
+/* Reusable Section Style */
+section {
+    padding: 40px 20px;
+}
+
+/* Row Layout */
 .row {
     display: flex;
     justify-content: space-around;
@@ -56,36 +54,58 @@ header a{
     padding: 20px;
 }
 
-.box {
-    width: 500px;
-    padding: 30px;
-    transition: transform .5s;
+/* Boxes & Hover Effects */
+.box,
+.project-card,
+.service-card,
+.info-box {
+    transition: transform 0.5s ease;
 }
 
-.btn-Signup{
-    background-color: orange;
+.box:hover,
+.project-card:hover,
+.info-box:hover {
+    transform: scale(1.1);
+}
+
+/* General Button */
+.btn-Signup {
+    background-color: #ff9800;
     margin-top: 10px;
-    padding:7px;
+    padding: 7px 14px;
     font-size: 20px;
     border-radius: 10px;
-    border:none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
+/* Summary Text */
 .summary {
     font-size: 20px;
     margin-top: 10px;
 }
 
+/* Image Styling */
 .image {
     border-radius: 50px;
+    max-width: 100%;
 }
 
+/* Titles */
 .title {
     font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
 }
+
+/* Projects Section */
 #projects {
-    background-color: #d6c9f0;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 40px 20px;
+    border-radius: 12px;
+    margin: 20px;
 }
 
 .projects-heading {
@@ -95,15 +115,14 @@ header a{
 }
 
 .projects-container {
-
-     display:flex;
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
 .project-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border: 2px solid black;
     border-radius: 20px;
     width: 250px;
@@ -119,6 +138,8 @@ header a{
     border-radius: 8px;
     cursor: pointer;
 }
+
+/* Services */
 .section-heading {
     text-align: center;
     font-size: 28px;
@@ -130,47 +151,50 @@ header a{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 30px auto;
-    background-color: #b5b1b5;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 20px;
+    border-radius: 12px;
 }
 
 .service-card {
-    background-color: #e6e6e6;
-    border: 2px solid: #d6c9f0c;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #d6c9f0;
     border-radius: 16px;
     width: 250px;
     padding: 20px;
     margin: 10px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+/* About Section */
 .about-container {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #c69cec;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 12px;
-    line-height: 1.6;
     font-size: 18px;
     text-align: center;
 }
 
+/* Contact Section */
 .contact-container {
     display: flex;
     justify-content: center;
     padding: 50px;
-    background-color: rgb(240, 192, 231);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    margin: 30px 20px;
 }
 
 .contact-form {
-    background-color:#c89edf;updated
+    background-color: rgba(200, 158, 223, 0.85);
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(170, 130, 130, 0.1);
     width: 100%;
     max-width: 500px;
+    box-shadow: 0 0 10px rgba(170, 130, 130, 0.1);
 }
 
 .contact-form input,
@@ -187,7 +211,7 @@ header a{
 .contact-form button {
     padding: 10px 20px;
     background-color: #898464;
-    color: rgb(255, 255, 255);
+    color: #fff;
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -197,31 +221,4 @@ header a{
 .contact-form button:hover {
     background-color: #45a049;
 }
-#services, #about, #contact {
-    padding: 30px 20px;
-}
-#home {
-    background-color: #fff8e1; /* light yellow */
-}
 
-#services {
-    background-color: #e1f5fe; /* light blue */
-}
-
-#about {
-    background-color: #e8f5e9; /* light green */
-}
-
-#contact {
-    background-color: #fce4ec; /* light pink */
-}
-.box:hover{
-    transform:scale(1.1,1.1);
-}
-
-.info-box:hover{
-    transform:scale(1.1,1.1);
-}
-.project-card:hover{
-    transform:scale(1.1,1.1);
-}
