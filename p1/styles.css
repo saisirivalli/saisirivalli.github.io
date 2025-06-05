@@ -1,111 +1,92 @@
 
-body {
-    background: url('your-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-}
-/* Reset & Base Styles */
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-
-
-/* Container Setup */
 .container {
     width: 100%;
-    margin: auto;
+    margin: auto
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: rgba(255, 165, 0, 0.9); /* Semi-transparent orange */
-    color: rgb(117, 8, 26);
-    padding: 10px 20px;
+    background-color: orange;
+    color: black;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px;
+}
+
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    color: white;
+    padding: 10px;
 }
 
 header li {
     display: inline-block;
     font-size: 20px;
-    padding: 5px 10px;
+    padding: 5px;
 }
 
-header a {
+header a{
     text-decoration: none;
-    color: inherit;
 }
 
-/* Reusable Section Style */
-section {
-    padding: 40px 20px;
-}
-
-/* Row Layout */
 .row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
+    align-items: center;
 }
 
-/* Boxes & Hover Effects */
-.box,
-.project-card,
-.service-card,
-.info-box {
-    transition: transform 0.5s ease;
+.box {
+    width: 500px;
+    padding: 30px;
+    transition: transform .5s;
 }
 
-.box:hover,
-.project-card:hover,
-.info-box:hover {
-    transform: scale(1.1);
-}
-
-/* General Button */
-.btn-Signup {
-    background-color: #ff9800;
+.btn-Signup{
+    background-color: orange;
     margin-top: 10px;
-    padding: 7px 14px;
+    padding:7px;
     font-size: 20px;
     border-radius: 10px;
-    border: none;
-    color: white;
-    cursor: pointer;
+    border:none;
 }
 
-/* Summary Text */
 .summary {
     font-size: 20px;
     margin-top: 10px;
 }
 
-/* Image Styling */
 .image {
     border-radius: 50px;
-    max-width: 100%;
 }
 
-/* Titles */
 .title {
     font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px 0;
 }
-
-/* Projects Section */
 #projects {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #d6c9f0;
     padding: 40px 20px;
-    border-radius: 12px;
-    margin: 20px;
 }
 
 .projects-heading {
@@ -115,103 +96,110 @@ section {
 }
 
 .projects-container {
-    display: flex;
+     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 30px;
+
 }
 
 .project-card {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     border: 2px solid black;
     border-radius: 20px;
-    width: 250px;
-    padding: 30px;
-    margin: 20px;
+    width: 300px;
+    padding: 28px 24px;
+    margin-top: 12px;
+    margin-bottom:16px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .demo-button {
     padding: 8px 16px;
-    background-color: #eee;
+    background-color: teal;
     border: 1px solid #000;
     border-radius: 8px;
     cursor: pointer;
+    color:white;
+    margin-top:16px;
+    justify-content: space-between;
 }
-
-/* Services */
+#services{
+    background-color:#13294B;
+    margin: 0;
+  padding: 40px 20px;
+}
 .section-heading {
     text-align: center;
     font-size: 28px;
     margin-top: 40px;
     font-weight: bold;
+    color: white;
 }
 
 .services-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.6);
+    margin: 30px auto;
     padding: 20px;
-    border-radius: 12px;
+    
 }
 
+
 .service-card {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid #d6c9f0;
+    background-color:white;
+    border: 2px solid black;
     border-radius: 16px;
     width: 250px;
     padding: 20px;
     margin: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
     text-align: center;
+    
 }
-
-/* About Section */
+#about{
+    background-color:#D3D3D3;
+     margin: 0;
+  padding: 30px 20px;
+}
 .about-container {
-    max-width: 800px;
+    max-width: 700px;
     margin: 30px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #f1f1f1;
     border-radius: 12px;
+    line-height: 1.6;
     font-size: 18px;
     text-align: center;
+   
+}
+#contact{
+    background-color:#f49a8d;
+     margin: 0;
+  padding: 40px 20px;
 }
 
-/* Contact Section */
 .contact-container {
     display: flex;
     justify-content: center;
-    padding: 50px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    margin: 30px 20px;
+    padding: 30px;
 }
 
 .contact-form {
-    background-color: rgba(200, 158, 223, 0.85);
+    background-color: #fff;
     border-radius: 12px;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 100%;
     max-width: 500px;
-    box-shadow: 0 0 10px rgba(170, 130, 130, 0.1);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #9c7777;
-    border-radius: 6px;
-    font-size: 16px;
-    text-align: center;
 }
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #898464;
-    color: #fff;
+    background-color: #4caf50;
+    color: white;
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -221,4 +209,42 @@ section {
 .contact-form button:hover {
     background-color: #45a049;
 }
-
+.about-heading{
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.box:hover {
+    transform: scale(1.1,1.1);
+}
+.h{
+    margin-top:5px;
+}
+.p{
+    margin-top: 5px;
+    line-height: 1.4;
+}
+.p-image{
+    width: 50%;
+    height: 40%;;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    align-items: center;
+     margin: 12px auto; 
+    display: block;
+}
+.pro-image{
+    width: 120px; 
+    height: 120px; 
+    border-radius: 100%; 
+    display: block;
+    margin: 0 auto 15px; 
+    margin-top: 40px;
+     object-fit: cover;
+    object-position: center; 
+}
+.about-heading{
+    margin-top:10px;
+}
