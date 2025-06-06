@@ -183,19 +183,19 @@ footer{
 }
 .box:hover{
 
-  background-color: white;
+  background-color: rgb(239, 192, 192);
   transform: scale(1.1,1.1);
 }
 .service-box:hover{
-  background-color: white;
+  background-color: rgb(199, 185, 185);
   transform: scale(1.1,1.1);
 
 }
   .project-box:hover{
-     background-color: white;
+     background-color: rgb(208, 188, 188);
   transform: scale(1.1,1.1);
   }
   .about-container:hover{
-     background-color:gainsboro ;
+     background-color:rgb(222, 195, 195) ;
   transform: scale(1.1,1.1);
   }
